@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Black">
+
+
+
+<!-- Main Container -->
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/Black" >
+    
+    <!-- Inner Container 01: Display Heading / Image / Title / Date / Vote-->
+    <!-- Layout container for heading -->
+    <LinearLayout 
+        android:orientation="vertical" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <!-- Heading1 = Movie Details -->
+        <TextView
+            android:id="@+id/details_Heading1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/moviedetails_titleheading01"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:background="@color/Gold" />
+      
+    </LinearLayout><!-- Close Layout container for heading -->
+    
+    <!-- Layout container for Image / Title / Date / Vote-->
+    <LinearLayout
+        android:orientation="vertical" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/White">
+        
+        <!-- Contain Vertically -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal" >
+
+            <!-- Image Container -->
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp" >
+
+                <ImageView
+                    android:id="@+id/movie_picture"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+                
+            </LinearLayout><!-- Close Image Container -->
+			
+			<!-- Contian Title / Date / Vote -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" 
+                android:layout_marginLeft="5dp">
+				
+				<!-- Title -->
+                <TextView
+                    android:id="@+id/movieTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/movie_title"
+                    android:textAlignment="center"
+                    android:textSize="25sp" 
+                    />
+				<!-- Contian Date / Vote -->
+				<LinearLayout
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginLeft="5dp"
+				    android:orientation="horizontal" >
+					<!-- Contian Plain Text -->
+					<LinearLayout
+					    android:layout_width="fill_parent"
+				    	android:layout_height="fill_parent"
+				    	android:orientation="vertical">
+					    
+					    <TextView
+					        android:id="@+id/movieReleaseDateText"
+					        android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"
+					        android:text="@string/releaseDate"
+					        android:textSize="16sp" />
+					    
+					    <TextView
+					        android:id="@+id/movieVoteAverageText"
+					        android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"
+					        android:text="@string/voteAverage"
+					        android:textSize="16sp" />
+					    
+					</LinearLayout>
+					<!-- Contain API Requested Text -->
+					<LinearLayout
+					    android:layout_width="fill_parent"
+				    	android:layout_height="fill_parent"
+				    	android:orientation="vertical"
+				    	android:layout_marginLeft="2dp">
+
+					    <TextView
+					        android:id="@+id/movieReleaseDate"
+					        android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"
+					        android:text="@string/release_date"
+					        android:textAlignment="center"
+					        android:textSize="16sp" />
+
+					    <TextView
+					        android:id="@+id/movieVoteAverage"
+					        android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"
+					        android:text="@string/vote_average"
+					        android:textAlignment="center"
+					        android:textSize="16sp" />
+					</LinearLayout> <!-- Close Contain API Requested Text -->
+				</LinearLayout> <!-- Close Contain Date / Vote -->
+            </LinearLayout> <!-- Close Contian Title / Date / Vote -->
+        </LinearLayout> <!-- Close Contain Vertically -->
+    </LinearLayout> <!-- Close Layout container for Image / Title / Date / Vote -->
+    
+    <!--  Inner Container 02: Overview container -->
+    <!--  Layout Container Heading 2 -->
+    <LinearLayout 
+        android:orientation="vertical" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+        
+        <!-- Heading2 = Movie Overview -->
+        <TextView
+            android:id="@+id/details_Heading2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/moviedetails_titleheading02"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:background="@color/Gold" />
+        
+     </LinearLayout> <!-- Close Layout container for heading 2 -->
+     
+    <!-- Layout container for Overview Text -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/movieOverview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/overview"
+            android:textSize="16sp"
+            />
+        
+    </LinearLayout> <!-- Close Layout container for Overview -->
+    
+    <!--  Inner Container 03: External buttons container -->
+    <!--  Layout Container Heading 3 -->
+    <LinearLayout 
+        android:orientation="vertical" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        
+        <!-- Heading3 = External Links -->
+        <TextView
+            android:id="@+id/details_Heading3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/moviedetails_titleheading03"
+            android:textSize="16sp"
+            android:background="@color/Gold" />
+        
+     </LinearLayout> <!-- Close Layout container for heading3 -->
+     <!-- Layout container for external buttons links -->
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:orientation="vertical"
+        android:padding="5dp" >
+        
+        <!-- Horizontal Layout Container -->
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+            
+            <!-- Contian Button 1 -->
+			<LinearLayout
+			    android:layout_weight="1"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:orientation="vertical">
+				
+			    <Button
+            		android:id="@+id/webbutton"
+            		android:layout_width="fill_parent"
+            		android:layout_height="fill_parent"
+            		android:onClick="movieWeb"
+            		android:text="@string/webview_btn" />
+								    
+			</LinearLayout> <!-- Close Contain Button 1 -->
+            <!-- Contian Button 2 -->
+			<LinearLayout
+			    android:layout_weight="1"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:orientation="vertical">
+				
+			    <Button
+            		android:id="@+id/trailerbutton"
+            		android:layout_width="fill_parent"
+            		android:layout_height="fill_parent"
+            		android:onClick="movieTrailer"
+            		android:text="@string/trailer_btn" />
+								    
+			</LinearLayout> <!-- Close Contain Button 2 -->
+			 <!-- Contian Button 3 -->
+			<LinearLayout
+			    android:layout_weight="1"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:orientation="vertical">
+				
+			    <Button
+            		android:id="@+id/reviewButton"
+            		android:layout_width="fill_parent"
+            		android:layout_height="fill_parent"
+            		android:onClick="movieReview"
+            		android:text="Reviews" />
+								    
+			</LinearLayout> <!-- Close Contain Button 3 -->
+        </LinearLayout><!-- Close Horizontal Layout Container -->
+    </LinearLayout> <!-- Close Layout container for external button links -->
+</LinearLayout>
+</ScrollView>
+

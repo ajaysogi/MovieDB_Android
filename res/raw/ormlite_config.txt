@@ -1,0 +1,29 @@
+#
+# generated on 2014/12/14 06:08:50
+#
+# --table-start--
+dataClass=com.moviedb.Review
+tableName=review
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=displayTitle
+# --field-end--
+# --field-start--
+fieldName=author
+# --field-end--
+# --field-start--
+fieldName=pubDate
+# --field-end--
+# --field-start--
+fieldName=headLine
+# --field-end--
+# --field-start--
+fieldName=summaryShort
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################

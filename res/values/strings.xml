@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Movie Box</string>
+    <string name="app_label">Movie Database</string>
+    <string name="action_settings">Settings</string>
+    
+    <!-- Home Screen Activity Text -->
+    <string name="home_title">MOVIE BOX</string>
+    <string name="home_subtitle">Home Page</string>
+    <string name="home_startSearch_btn">Search Movies</string>
+    
+    <!-- Search -->
+    <string name="search_hint">Search Movies. . . </string>
+    <string name="search_movies">search</string>
+    <string name="clear_history">Delete History</string>
+    
+    <!-- String for the MovieDetailsActivity -->
+	<string name="movie_title">Title</string>
+	<string name="movieTitle">Title:</string>
+	<string name="release_date">Release Date</string>
+	<string name="releaseDate">Release Date: </string>
+	<string name="vote_average">Recommended</string>
+	<string name="voteAverage">Ratings:</string>
+	<string name="overview"></string>
+	<string name="externalLinks">External Links</string>
+	<string name="movie_poster">poster</string>
+	<string name="webview_btn">Website</string>
+	<string name="trailer_btn">Trailer</string>
+	
+	<!-- Title Headings -->
+	<string name="moviedetails_titleheading01">Movie Details</string>
+	<string name="moviedetails_titleheading02">Overview</string>
+	<string name="moviedetails_titleheading03">External Links</string>
+	
+	<!-- details_refresh Menu -->
+	<string name="refresh">Refresh</string>
+	
+	<!-- Delete String -->
+	<string name="remove_alert_title">Remove Movie</string>
+	<string name="remove_alert_posotive">Yes</string>
+	<string name="remove_alert_negative">No</string>
+	<string name="redirect_alert">OK</string>
+	
+	<!-- Colour Block -->
+	<color name="Black">#000000</color>
+	<color name="White">#ffffff</color>
+	<color name="Gold">#FFD700</color>
+	
+</resources>

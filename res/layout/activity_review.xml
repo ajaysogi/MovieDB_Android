@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Black">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Black"
+    android:padding="16dp" >
+	
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_border"
+        >
+        <!-- Display Title -->
+
+        <TextView
+            android:id="@+id/display_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+           
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/White" />
+        
+    </LinearLayout>
+	
+    <!-- Authour / Pubdate Container -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+        <!-- ======================================================================== -->
+        <!-- Authour Container -->
+        <!-- ======================================================================== -->
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <!-- Byline /Authour/ -->
+    		<TextView
+        		android:id="@+id/byline"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        	
+        		android:textColor="@color/White" />
+            
+        </LinearLayout>
+        <!-- ======================================================================== -->
+        <!-- Published Date Container -->
+        <!-- ======================================================================== -->
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <!-- Publicatioin Date -->
+    		<TextView
+        		android:id="@+id/publication_date"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:textColor="@color/White"/>
+            
+        </LinearLayout>
+        <!-- ======================================================================== -->
+    </LinearLayout> <!-- End Authour / Pubdate Container -->
+
+
+    <!-- Headline -->
+
+    <TextView
+        android:id="@+id/headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="18sp" 
+        android:layout_marginTop="10dp"/>
+
+    <!-- Summary container -->
+    <!--  Layout Container Heading  -->
+    <LinearLayout 
+        android:orientation="vertical" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" 
+        android:background="@drawable/rounded_border">
+        
+        <!-- Heading2 = Summary -->
+        <TextView
+            android:id="@+id/review_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Summary"
+            android:textSize="16sp"
+            android:textColor="@color/White"
+            />
+        
+     </LinearLayout> <!-- Close Layout container for heading -->
+     
+    <!-- Layout container for Summary Text -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <!-- Summary Short -->
+    	<TextView
+        	android:id="@+id/summary_short"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	
+        	android:textColor="@color/White"
+        	/>
+    	
+    </LinearLayout> <!-- Close Layout container for Overview -->
+
+    <ProgressBar
+        android:id="@+id/reviewsProgressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/reviewURL_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Gold"
+        android:layout_marginTop="20dp"
+        android:padding="4dp"
+        android:onClick="reviewWeb"
+        />
+    <!-- 
+    <Button
+        android:id="@+id/saveReviewBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Gold"
+        android:layout_marginTop="20dp"
+        android:padding="4dp"
+        android:onClick="saveButton"
+        android:text="Save Review"
+        />
+    -->
+</LinearLayout>
+
+</ScrollView>

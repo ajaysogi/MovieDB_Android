@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.moviedb"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="19" />
+    
+	<uses-permission android:name="android.permission.INTERNET" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <!-- Search Suggestions -->
+        <provider android:name=".MySuggestionProvider"
+              	  android:authorities="com.moviedb.MySuggestionProvider" />
+        
+        <!-- SPLASH SCREEN -->
+        <!-- Lock screen orientation -->
+        <!-- Apply theme to allow splash screen to control whole screen -->
+        <activity 
+            android:name=".SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        
+        <!-- Home Activity -->
+        <activity android:name=".HomeActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter >
+            	<action android:name="com.moviedb.CLEARSCREEN" />
+            	<category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <!-- Search Activity, perform searches -->
+        <activity android:name="SearchableActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+        </activity>
+        
+        <!-- Main activity -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+
+            <!-- Search to use SearchActivity -->
+            <meta-data android:name="android.app.default_searchable"
+                android:value=".SearchableActivity"/>
+        </activity>
+        
+        <!-- Movie Details Activity -->
+        <activity android:name="MovieDetailsActivity" android:label="@string/app_name"></activity>
+        
+        <!-- Movie Trailer Activity -->
+        <activity android:name="MovieTrailerActivity" android:label="@string/app_name"></activity>
+        
+        <!-- Movie Web Activity -->
+        <activity android:name="MovieWebActivity" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        
+        <!-- Movie Review Activity -->
+        <activity android:name="MovieReviewActivity" android:label="@string/app_name"></activity>
+        
+        <!-- View Reviews Activity -->
+		<activity android:name="ViewReviewsActivity" android:label="@string/app_name"></activity>        
+        
+    </application>
+
+</manifest>
